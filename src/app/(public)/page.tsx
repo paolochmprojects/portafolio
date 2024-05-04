@@ -5,11 +5,12 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="flex-grow max-w-screen-xl mx-auto w-full px-6">
-
-      <section className="my-5 flex flex-wrap justify-center gap-10 min-h-[26rem] bg-gradient-radial from-red-600/50 via-black to-transparent">
+      <section className="mt-20 mb-20 flex flex-wrap justify-center gap-10 min-h-[26rem] bg-gradient-radial from-red-600/50 via-black to-transparent">
         <div className="w-[30rem] flex flex-col gap-8 justify-center">
-          <h1 className="text-3xl lg:text-5xl font-bold">Hola soy, <HomeTyping/></h1>
-          <p className="text-lg">Enfocado a crear software de calidad, con el principal objetivo de solucionar problemas.</p>
+          <h1 className="text-3xl lg:text-5xl font-bold">Hola soy, <HomeTyping /></h1>
+          <p className="text-lg">
+            Enfocado a crear software de calidad y mantenible, con el principal objetivo de solucionar problemas.
+          </p>
           <Link href="http://www.linkedin.com/in/paolocesarcharcamamani"
             className="flex justify-around items-center w-40 text-lg bg-red-600 p-2 rounded-xl text-center font-semibold hover:scale-105 transition-all duration-500 delay-100"
           >
@@ -21,12 +22,57 @@ export default function Home() {
         </div>
         <div className="flex items-center min-w-56">
           <Image className="rounded-full shadow-2xl shadow-red-600/30"
-            src="https://avatars.githubusercontent.com/u/101404226?v=4"
+            src="/101404226.webp"
             width={300}
             height={300}
             alt="paolochmprojects profile avatar"
           />
         </div>
+      </section>
+      <section id="about-me" className="mt-32 flex mx-auto max-w-screen-lg min-h-[48rem]">
+        <div className="h-[96rem] w-full max-w-72">
+          <h2 className="sticky top-20 transform font-bebas text-5xl" >Sobre Mi</h2>
+        </div>
+        <div className="w-full">
+          <h3 className="text-3xl font-bebas font-semibold mb-6">
+            Mi experiencia
+          </h3>
+          <p>
+            Tengo un poco mas de un año de experiencia, desarrollando soluciones para software ERP en el ecosistema de odoo
+            en sus versiones community y enterprise, diseñando páginas, creando de módulos personalizados, integración de
+            módulos desarrollados por terceros, en la odoo store, usando lenguajes como python y javascript, con base de datos
+            postgresql, desarrollando conceptos sólidos en POO, manejo y administración de dependencias y usando docker como
+            mi herramienta de desarrollo portátil y seguro.
+          </p>
+          <div className="mt-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="flex justify-center items-center transform -rotate-12 shadow-red-600 drop-shadow-2xl">
+                <Image className="hover:scale-110 transition-all duration-500" src="/icons/javascript.svg" width={100} height={100} alt="javascript logo" />
+              </div>
+              <div className="flex justify-center items-center transform rotate-0">
+                <Image className="hover:scale-110 transition-all duration-500" src="/icons/postgresql.svg" width={100} height={100} alt="postgresql" />
+              </div>
+              <div className="flex justify-center items-center transform rotate-12">
+                <Image className="hover:scale-110 transition-all duration-500" src="/icons/python.svg" width={150} height={150} alt="python logo" />
+              </div>
+              <div className="md:col-span-3 h-16 md:h-32 overflow-hidden flex justify-center items-center transform rotate-3">
+                <Image className="hover:scale-110 transition-all duration-500" src="/icons/odoo.svg" width={500} height={500} alt="odoo logo" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="mi-projects" className="flex mx-auto max-w-screen-lg min-h-[48rem]">
+        <div className="h-[96rem] w-full max-w-72">
+          <h3 className="sticky top-20 transform font-bebas text-5xl" >Mis proyectos</h3>
+        </div>
+        <div className="">paolo</div>
+      </section>
+      <section id="contact-me" className="flex mx-auto max-w-screen-lg min-h-[48rem]">
+        <div className="h-[96rem] w-full max-w-72">
+          <h3 className="sticky top-20 transform font-bebas text-5xl" >Contacto</h3>
+        </div>
+        <div className="">paolo</div>
       </section>
     </main>
   );
