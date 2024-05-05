@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="flex-grow max-w-screen-xl mx-auto w-full px-6">
       <FadeIn>
-        <section className="min-h-screen flex flex-wrap justify-center mt-20 lg:mt-0 md:gap-10 bg-gradient-radial from-red-600/50 via-black to-transparent">
+        <section className="min-h-screen flex flex-wrap justify-center mt-15 lg:mt-0 lg:gap-10 bg-gradient-radial from-red-600/50 via-black to-transparent">
           <div className="w-[30rem] flex flex-col gap-8 justify-center">
             <h1 className="text-3xl lg:text-5xl font-bold">Hola soy, <HomeTyping /></h1>
             <p className="text-lg">
@@ -23,12 +23,12 @@ export default function Home() {
               Contáctame
             </Link>
           </div>
-          <div className="flex items-center min-w-56">
+          <div className="flex items-start md:items-center min-w-56">
             <AvatarAnimation>
               <Image className="rounded-full shadow-2xl shadow-red-600/30"
                 src="/101404226.webp"
-                width={300}
-                height={300}
+                width={250}
+                height={250}
                 alt="paolochmprojects profile avatar"
               />
             </AvatarAnimation>
