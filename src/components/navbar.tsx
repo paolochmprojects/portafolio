@@ -1,4 +1,5 @@
 import Link from "next/link"
+import NavLink from "./navlink"
 
 const links = [
     {
@@ -10,26 +11,20 @@ const links = [
         url: "#mi-projects",
     },
     {
-        name: "Contáctame",
-        url: "#contact-me",
+        name: "Mis servicios",
+        url: "#my-services",
     }
 ]
 
 const Navbar = () => {
     return (
-        <nav className="z-30 fixed bg-black w-full top-0 p-6 justify-between">
+        <nav className="z-30 fixed bg-black/70 w-full top-0 p-6 justify-between">
             <div className="flex justify-between w-full max-w-screen-lg mx-auto">
                 <Link href="/" className="font-bebas text-3xl">
                     PaoloChM
                 </Link>
                 <ul className="hidden md:flex md:gap-6">
-                    {links.map((link, index) => <Link
-                        className="hover:text-red-600 active:text-red-600 text-sm font-medium transition-all duration-500 hover:scale-110"
-                        key={index}
-                        href={link.url}
-                    >
-                        {link.name}
-                    </Link>)}
+                    {links.map((link, index) => <NavLink key={index} url={link.url} name={link.name}/>)}
                 </ul>
             </div>
         </nav>

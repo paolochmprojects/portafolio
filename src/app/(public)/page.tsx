@@ -1,5 +1,7 @@
 import AvatarAnimation from "@/components/animations/avatar";
 import FadeIn from "@/components/animations/fadeIn";
+import JsIconsAnimate from "@/components/animations/js-icons";
+import PyIconsAnimate from "@/components/animations/python-icons";
 import HomeTyping from "@/components/home-typing";
 import Image from "next/image";
 import Link from "next/link";
@@ -74,45 +76,57 @@ export default function Home() {
               personales. Actualmente con python estoy aprendiendo temas de machine learning para aplicar soluciones inteligentes en
               ingienería.
             </p>
-            <div className="my-6 flex justify-center gap-6 flex-wrap">
-              <Image className="trasform hover:rotate-0 duration-500 -rotate-12" src="/icons/fastapi.svg" height={100} width={100} alt="FastApi Logo" />
-              <Image className="trasform hover:rotate-0 duration-500 rotate-12" src="/icons/django.svg" height={100} width={100} alt="Django Logo" />
-            </div>
+            <PyIconsAnimate />
             <h4 className="font-bebas text-2xl mb-6">TypeScript</h4>
             <p className="text-justify">
               Para un siguiente nivel decidí profundizar mucho más en el ambiente de javascript con typescript, y conocer las herramientas
               más populares en este ecosistema para el diseño de páginas estáticas y dinámicas en frontend, como también el desarrollo de
               backend para desarrollar aplicaciones fullstack.
             </p>
-            <div className="my-6 flex justify-center gap-6 flex-wrap">
-              <Image className="" src="/icons/javascript.svg" height={100} width={100} alt="Javascript logo" />
-              <Image className="" src="/icons/typescript.svg" height={100} width={100} alt="Typescript logo" />
-              <Image className="" src="/icons/html.svg" height={100} width={100} alt="Html logo" />
-              <Image className="" src="/icons/css.svg" height={100} width={100} alt="Css logo" />
-              <Image className="" src="/icons/react.svg" height={100} width={100} alt="React logo" />
-              <Image className="invert" src="/icons/nextlogo.svg" height={100} width={100} alt="Next logo" />
-              <Image className="" src="/icons/astro.svg" height={100} width={100} alt="Astro logo" />
-              <Image className="invert" src="/icons/prisma.svg" height={100} width={100} alt="Prisma logo" />
-              <Image className="" src="/icons/tailwind.svg" height={100} width={100} alt="Tailwind logo" />
-            </div>
+            <JsIconsAnimate />
             <div className="h-10"></div>
           </div>
         </section>
       </FadeIn>
       <FadeIn>
         <section id="mi-projects" className="flex mx-auto max-w-screen-lg min-h-[48rem]">
-          <div className="h-[96rem] w-full max-w-72">
-            <h3 className="sticky top-20 transform font-bebas text-5xl" >Mis proyectos</h3>
+          <div className="flex-grow w-full max-w-72">
+            <h2 className="sticky top-20 transform font-bebas text-5xl" >Mis proyectos</h2>
           </div>
-          <div className="">paolo</div>
+          <div className="">
+            <h3>OdontPro</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam temporibus a
+              magnam? Quo repellendus commodi minus architecto delectus deserunt dignissimos
+              alias praesentium molestias adipisci pariatur vitae sunt eum quasi, doloremque
+              magni quidem inventore placeat saepe? Ullam veritatis atque illo praesentium
+              quia, eaque numquam aliquam voluptatem. Repudiandae molestiae ad voluptatibus
+              voluptate pariatur asperiores exercitationem, modi vitae veniam esse velit dicta
+              facere porro distinctio atque nisi, non, quos maiores saepe dolore? Placeat alias
+              eaque eius autem obcaecati quisquam fuga minima a at minus ratione mollitia hic itaque,
+              commodi quaerat omnis magni dignissimos, saepe nemo suscipit doloribus.
+              Perspiciatis provident molestiae voluptatibus inventore eligendi unde impedit sint
+              cum. Illum eveniet, quis perspiciatis quidem amet veniam non magni nobis et. Ullam
+              possimus sit facere officia, eligendi fugiat provident repellendus quasi. Blanditiis,
+              enim libero eum harum velit reprehenderit? Est, aliquid! Veniam, in sint quod fuga
+              repellendus ducimus autem eum dolores numquam illo qui sed minus earum error debitis
+              est omnis adipisci necessitatibus atque. Cupiditate iusto ratione vel repellendus
+              incidunt ex officia pariatur cumque soluta debitis quis, hic facilis perferendis,
+              ducimus voluptatem porro sint ut? Voluptas dolore quidem doloremque maiores nostrum.
+              Pariatur neque, quas aut ipsum, numquam a dolor dicta fugit debitis nobis illo aperiam
+              corporis at!
+            </p>
+          </div>
         </section>
       </FadeIn>
       <FadeIn>
-        <section id="contact-me" className="flex mx-auto max-w-screen-lg min-h-[48rem]">
-          <div className="h-[96rem] w-full max-w-72">
-            <h3 className="sticky top-20 transform font-bebas text-5xl" >Contacto</h3>
+        <section id="my-services" className="flex mx-auto max-w-screen-lg min-h-[48rem]">
+          <div className="flex-grow w-full max-w-72">
+            <h3 className="sticky top-20 transform font-bebas text-5xl" >Mis servicios</h3>
           </div>
-          <div className="">paolo</div>
+          <div className="">
+
+          </div>
         </section>
       </FadeIn>
     </main >
