@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="flex-grow max-w-screen-xl mx-auto w-full px-6">
       <FadeIn>
-        <section className="min-h-screen flex flex-wrap justify-center gap-10 bg-gradient-radial from-red-600/50 via-black to-transparent">
+        <section className="min-h-screen flex flex-wrap justify-center mt-20 lg:mt-0 md:gap-10 bg-gradient-radial from-red-600/50 via-black to-transparent">
           <div className="w-[30rem] flex flex-col gap-8 justify-center">
             <h1 className="text-3xl lg:text-5xl font-bold">Hola soy, <HomeTyping /></h1>
             <p className="text-lg">
