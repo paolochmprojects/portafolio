@@ -25,7 +25,8 @@ const FadeIn = ({ children }: Props) => {
         initial="hidden"
         whileInView="visible"
         transition={{
-            duration: 0.5
+            duration: 0.5,
+            ease: 'easeInOut'
         }}
     >
         {children}

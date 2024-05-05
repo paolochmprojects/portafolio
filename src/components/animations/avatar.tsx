@@ -8,11 +8,11 @@ interface Props {
 
 const variants: Variants = {
     hidden: {
-        rotate: 180,
+        scale: 0,
         opacity: 0
     },
     visible: {
-        rotate: 0,
+        scale: 1,
         opacity: 1
     }
 }
@@ -24,8 +24,7 @@ const AvatarAnimation = ({ children }: Props) => {
             initial="hidden"
             whileInView="visible"
             transition={{
-                delay: 0.5,
-                duration: 0.7
+                delay: 0.5
             }}
         >
             {children}

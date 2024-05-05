@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="flex-grow max-w-screen-xl mx-auto w-full px-6">
       <FadeIn>
-        <section className="mt-28 mb-20 flex flex-wrap justify-center gap-10 min-h-[26rem] bg-gradient-radial from-red-600/50 via-black to-transparent">
+        <section className="min-h-screen flex flex-wrap justify-center gap-10 bg-gradient-radial from-red-600/50 via-black to-transparent">
           <div className="w-[30rem] flex flex-col gap-8 justify-center">
             <h1 className="text-3xl lg:text-5xl font-bold">Hola soy, <HomeTyping /></h1>
             <p className="text-lg">
@@ -35,80 +35,86 @@ export default function Home() {
           </div>
         </section>
       </FadeIn>
-      <section id="about-me" className="mt-32 flex gap-4 mx-auto max-w-screen-lg">
-        <div className="flex-grow text-nowrap md:w-72">
-          <h2 className="sticky top-20 transform font-bebas text-2xl md:text-5xl" >Sobre Mi</h2>
-        </div>
-        <div className="w-full bg-gradient-radial from-red-600/50 via-black to-transparent">
-          <h3 className="text-3xl font-bebas font-semibold mb-6">
-            Mi experiencia
-          </h3>
-          <h4 className="font-bebas text-2xl mb-6">Odoo ERP</h4>
-          <p className="text-justify">
-            Tengo un poco mas de un año de experiencia, desarrollando soluciones para software ERP en el ecosistema de odoo
-            en sus versiones community y enterprise, diseñando páginas, creando de módulos personalizados, integración de
-            módulos desarrollados por terceros, en la odoo store, usando lenguajes como python y javascript, con base de datos
-            postgresql, desarrollando conceptos sólidos en POO, manejo y administración de dependencias y usando docker como
-            mi herramienta de desarrollo portátil y seguro.
-          </p>
-          <div className="my-6">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="flex justify-center drop-shadow-2xl shadow-red-500 items-center transform -rotate-12">
-                <Image className="hover:scale-110 transition-all duration-500" src="/icons/javascript.svg" width={100} height={100} alt="javascript logo" />
-              </div>
-              <div className="flex justify-center items-center transform rotate-0">
-                <Image className="hover:scale-110 transition-all duration-500" src="/icons/postgresql.svg" width={100} height={100} alt="postgresql" />
-              </div>
-              <div className="flex justify-center items-center transform rotate-12">
-                <Image className="hover:scale-110 transition-all duration-500" src="/icons/python.svg" width={150} height={150} alt="python logo" />
-              </div>
-              <div className="md:col-span-3 h-16 md:h-32 overflow-hidden flex justify-center items-center transform rotate-6">
-                <Image className="hover:scale-110 transition-all duration-500" src="/icons/odoo.svg" width={500} height={500} alt="odoo logo" />
+      <FadeIn>
+        <section id="about-me" className="mt-32 flex gap-4 mx-auto max-w-screen-lg">
+          <div className="flex-grow text-nowrap md:w-72">
+            <h2 className="sticky top-20 transform font-bebas text-2xl md:text-5xl" >Sobre Mi</h2>
+          </div>
+          <div className="w-full bg-gradient-radial from-red-600/50 via-black to-transparent">
+            <h3 className="text-3xl font-bebas font-semibold mb-6">
+              Mi experiencia
+            </h3>
+            <h4 className="font-bebas text-2xl mb-6">Odoo ERP</h4>
+            <p className="text-justify">
+              Tengo un poco mas de un año de experiencia, desarrollando soluciones para software ERP en el ecosistema de odoo
+              en sus versiones community y enterprise, diseñando páginas, creando de módulos personalizados, integración de
+              módulos desarrollados por terceros, en la odoo store, usando lenguajes como python y javascript, con base de datos
+              postgresql, desarrollando conceptos sólidos en POO, manejo y administración de dependencias y usando docker como
+              mi herramienta de desarrollo portátil y seguro.
+            </p>
+            <div className="my-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="flex justify-center drop-shadow-2xl shadow-red-500 items-center transform -rotate-12">
+                  <Image className="hover:scale-110 transition-all duration-500" src="/icons/javascript.svg" width={100} height={100} alt="javascript logo" />
+                </div>
+                <div className="flex justify-center items-center transform rotate-0">
+                  <Image className="hover:scale-110 transition-all duration-500" src="/icons/postgresql.svg" width={100} height={100} alt="postgresql" />
+                </div>
+                <div className="flex justify-center items-center transform rotate-12">
+                  <Image className="hover:scale-110 transition-all duration-500" src="/icons/python.svg" width={150} height={150} alt="python logo" />
+                </div>
+                <div className="md:col-span-3 h-16 md:h-32 overflow-hidden flex justify-center items-center transform rotate-6">
+                  <Image className="hover:scale-110 transition-all duration-500" src="/icons/odoo.svg" width={500} height={500} alt="odoo logo" />
+                </div>
               </div>
             </div>
+            <h4 className="font-bebas text-2xl mb-6">Python</h4>
+            <p className="text-justify">
+              En paralelo, extendí mi conocimientos en backend, con los frameworks backend, como Django y FastAPI, creando proyectos
+              personales. Actualmente con python estoy aprendiendo temas de machine learning para aplicar soluciones inteligentes en
+              ingienería.
+            </p>
+            <div className="my-6 flex justify-center gap-6 flex-wrap">
+              <Image className="trasform hover:rotate-0 duration-500 -rotate-12" src="/icons/fastapi.svg" height={100} width={100} alt="FastApi Logo" />
+              <Image className="trasform hover:rotate-0 duration-500 rotate-12" src="/icons/django.svg" height={100} width={100} alt="Django Logo" />
+            </div>
+            <h4 className="font-bebas text-2xl mb-6">TypeScript</h4>
+            <p className="text-justify">
+              Para un siguiente nivel decidí profundizar mucho más en el ambiente de javascript con typescript, y conocer las herramientas
+              más populares en este ecosistema para el diseño de páginas estáticas y dinámicas en frontend, como también el desarrollo de
+              backend para desarrollar aplicaciones fullstack.
+            </p>
+            <div className="my-6 flex justify-center gap-6 flex-wrap">
+              <Image className="" src="/icons/javascript.svg" height={100} width={100} alt="Javascript logo" />
+              <Image className="" src="/icons/typescript.svg" height={100} width={100} alt="Typescript logo" />
+              <Image className="" src="/icons/html.svg" height={100} width={100} alt="Html logo" />
+              <Image className="" src="/icons/css.svg" height={100} width={100} alt="Css logo" />
+              <Image className="" src="/icons/react.svg" height={100} width={100} alt="React logo" />
+              <Image className="invert" src="/icons/nextlogo.svg" height={100} width={100} alt="Next logo" />
+              <Image className="" src="/icons/astro.svg" height={100} width={100} alt="Astro logo" />
+              <Image className="invert" src="/icons/prisma.svg" height={100} width={100} alt="Prisma logo" />
+              <Image className="" src="/icons/tailwind.svg" height={100} width={100} alt="Tailwind logo" />
+            </div>
+            <div className="h-10"></div>
           </div>
-          <h4 className="font-bebas text-2xl mb-6">Python</h4>
-          <p className="text-justify">
-            En paralelo, extendí mi conocimientos en backend, con los frameworks backend, como Django y FastAPI, creando proyectos
-            personales. Actualmente con python estoy aprendiendo temas de machine learning para aplicar soluciones inteligentes en
-            ingienería.
-          </p>
-          <div className="my-6 flex justify-center gap-6 flex-wrap">
-            <Image className="trasform hover:rotate-0 duration-500 -rotate-12" src="/icons/fastapi.svg" height={100} width={100} alt="FastApi Logo" />
-            <Image className="trasform hover:rotate-0 duration-500 rotate-12" src="/icons/django.svg" height={100} width={100} alt="Django Logo" />
+        </section>
+      </FadeIn>
+      <FadeIn>
+        <section id="mi-projects" className="flex mx-auto max-w-screen-lg min-h-[48rem]">
+          <div className="h-[96rem] w-full max-w-72">
+            <h3 className="sticky top-20 transform font-bebas text-5xl" >Mis proyectos</h3>
           </div>
-          <h4 className="font-bebas text-2xl mb-6">TypeScript</h4>
-          <p className="text-justify">
-            Para un siguiente nivel decidí profundizar mucho más en el ambiente de javascript con typescript, y conocer las herramientas
-            más populares en este ecosistema para el diseño de páginas estáticas y dinámicas en frontend, como también el desarrollo de
-            backend para desarrollar aplicaciones fullstack.
-          </p>
-          <div className="my-6 flex justify-center gap-6 flex-wrap">
-            <Image className="" src="/icons/javascript.svg" height={100} width={100} alt="Javascript logo" />
-            <Image className="" src="/icons/typescript.svg" height={100} width={100} alt="Typescript logo" />
-            <Image className="" src="/icons/html.svg" height={100} width={100} alt="Html logo" />
-            <Image className="" src="/icons/css.svg" height={100} width={100} alt="Css logo" />
-            <Image className="" src="/icons/react.svg" height={100} width={100} alt="React logo" />
-            <Image className="invert" src="/icons/nextlogo.svg" height={100} width={100} alt="Next logo" />
-            <Image className="" src="/icons/astro.svg" height={100} width={100} alt="Astro logo" />
-            <Image className="invert" src="/icons/prisma.svg" height={100} width={100} alt="Prisma logo" />
-            <Image className="" src="/icons/tailwind.svg" height={100} width={100} alt="Tailwind logo" />
+          <div className="">paolo</div>
+        </section>
+      </FadeIn>
+      <FadeIn>
+        <section id="contact-me" className="flex mx-auto max-w-screen-lg min-h-[48rem]">
+          <div className="h-[96rem] w-full max-w-72">
+            <h3 className="sticky top-20 transform font-bebas text-5xl" >Contacto</h3>
           </div>
-          <div className="h-10"></div>
-        </div>
-      </section>
-      <section id="mi-projects" className="flex mx-auto max-w-screen-lg min-h-[48rem]">
-        <div className="h-[96rem] w-full max-w-72">
-          <h3 className="sticky top-20 transform font-bebas text-5xl" >Mis proyectos</h3>
-        </div>
-        <div className="">paolo</div>
-      </section>
-      <section id="contact-me" className="flex mx-auto max-w-screen-lg min-h-[48rem]">
-        <div className="h-[96rem] w-full max-w-72">
-          <h3 className="sticky top-20 transform font-bebas text-5xl" >Contacto</h3>
-        </div>
-        <div className="">paolo</div>
-      </section>
+          <div className="">paolo</div>
+        </section>
+      </FadeIn>
     </main >
   );
 }
