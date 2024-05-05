@@ -1,3 +1,4 @@
+import AvatarAnimation from "@/components/animations/avatar";
 import FadeIn from "@/components/animations/fadeIn";
 import HomeTyping from "@/components/home-typing";
 import Image from "next/image";
@@ -23,12 +24,14 @@ export default function Home() {
             </Link>
           </div>
           <div className="flex items-center min-w-56">
-            <Image className="rounded-full shadow-2xl shadow-red-600/30"
-              src="/101404226.webp"
-              width={300}
-              height={300}
-              alt="paolochmprojects profile avatar"
-            />
+            <AvatarAnimation>
+              <Image className="rounded-full shadow-2xl shadow-red-600/30"
+                src="/101404226.webp"
+                width={300}
+                height={300}
+                alt="paolochmprojects profile avatar"
+              />
+            </AvatarAnimation>
           </div>
         </section>
       </FadeIn>
@@ -106,6 +109,6 @@ export default function Home() {
         </div>
         <div className="">paolo</div>
       </section>
-    </main>
+    </main >
   );
 }

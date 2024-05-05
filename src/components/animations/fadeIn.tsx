@@ -15,12 +15,19 @@ const container: Variants = {
     visible: {
         opacity: 1,
         scale: 1,
-        translateX: 0
+        translateX: 0,
     }
 }
 
 const FadeIn = ({ children }: Props) => {
-    return (<motion.div variants={container} initial="hidden" animate="visible">
+    return (<motion.div
+        variants={container}
+        initial="hidden"
+        whileInView="visible"
+        transition={{
+            duration: 0.5
+        }}
+    >
         {children}
     </motion.div>)
 }
