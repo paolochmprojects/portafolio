@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex-grow max-w-screen-xl mx-auto w-full px-6">
+    <main className="relative flex-grow max-w-screen-xl mx-auto w-full px-6">
       <FadeIn>
         <section className="min-h-screen flex flex-wrap justify-center mt-15 lg:mt-0 lg:gap-10 bg-gradient-radial from-red-600/50 via-black to-transparent">
           <div className="w-[30rem] flex flex-col gap-8 justify-center">
@@ -95,27 +95,7 @@ export default function Home() {
           </div>
           <div className="">
             <h3>OdontPro</h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam temporibus a
-              magnam? Quo repellendus commodi minus architecto delectus deserunt dignissimos
-              alias praesentium molestias adipisci pariatur vitae sunt eum quasi, doloremque
-              magni quidem inventore placeat saepe? Ullam veritatis atque illo praesentium
-              quia, eaque numquam aliquam voluptatem. Repudiandae molestiae ad voluptatibus
-              voluptate pariatur asperiores exercitationem, modi vitae veniam esse velit dicta
-              facere porro distinctio atque nisi, non, quos maiores saepe dolore? Placeat alias
-              eaque eius autem obcaecati quisquam fuga minima a at minus ratione mollitia hic itaque,
-              commodi quaerat omnis magni dignissimos, saepe nemo suscipit doloribus.
-              Perspiciatis provident molestiae voluptatibus inventore eligendi unde impedit sint
-              cum. Illum eveniet, quis perspiciatis quidem amet veniam non magni nobis et. Ullam
-              possimus sit facere officia, eligendi fugiat provident repellendus quasi. Blanditiis,
-              enim libero eum harum velit reprehenderit? Est, aliquid! Veniam, in sint quod fuga
-              repellendus ducimus autem eum dolores numquam illo qui sed minus earum error debitis
-              est omnis adipisci necessitatibus atque. Cupiditate iusto ratione vel repellendus
-              incidunt ex officia pariatur cumque soluta debitis quis, hic facilis perferendis,
-              ducimus voluptatem porro sint ut? Voluptas dolore quidem doloremque maiores nostrum.
-              Pariatur neque, quas aut ipsum, numquam a dolor dicta fugit debitis nobis illo aperiam
-              corporis at!
-            </p>
+            <p>Descipcion en esta parte </p>
           </div>
         </section>
       </FadeIn>
