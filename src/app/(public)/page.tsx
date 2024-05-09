@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <main className="relative flex-grow max-w-screen-xl mx-auto w-full px-6">
       <FadeIn>
-        <section className="min-h-screen flex flex-wrap justify-center items-center mt-15 lg:mt-0 lg:gap-10 bg-gradient-radial from-red-600/50 via-black to-transparent">
-          <div className="absolute -z-10 flex gap-4 bottom-56">
+        <section className="md:min-h-screen gap-20 md:gap-15 flex flex-wrap justify-center items-center pt-20 lg:pt-0 bg-gradient-radial from-red-600/50 via-black to-transparent">
+          <div className="absolute -z-10 flex gap-4 bottom-48">
             <Image
               src="/icons/html.svg"
               width={100} height={100} alt="css logo"
