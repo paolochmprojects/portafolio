@@ -11,7 +11,24 @@ export default function Home() {
   return (
     <main className="relative flex-grow max-w-screen-xl mx-auto w-full px-6">
       <FadeIn>
-        <section className="min-h-[80vh] flex flex-wrap justify-center items-center mt-15 lg:mt-0 lg:gap-10 bg-gradient-radial from-red-600/50 via-black to-transparent">
+        <section className="min-h-screen flex flex-wrap justify-center items-center mt-15 lg:mt-0 lg:gap-10 bg-gradient-radial from-red-600/50 via-black to-transparent">
+          <div className="absolute -z-10 flex gap-4 bottom-56">
+            <Image
+              src="/icons/html.svg"
+              width={100} height={100} alt="css logo"
+              className="grayscale opacity-50"
+            />
+            <Image
+              src="/icons/css.svg"
+              width={100} height={100} alt="css logo"
+              className="grayscale opacity-50"
+            />
+            <Image
+              src="/icons/javascript.svg"
+              width={75} height={75} alt="js logo"
+              className="grayscale opacity-50"
+            />
+          </div>
           <div className="w-[30rem] flex flex-col gap-8 justify-center">
             <h1 className="text-3xl lg:text-5xl font-bold">Hola soy, <HomeTyping /></h1>
             <p className="text-lg">
