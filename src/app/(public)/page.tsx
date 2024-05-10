@@ -6,10 +6,17 @@ import HomeTyping from "@/components/home-typing";
 import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import Starfield from "react-starfield";
 
 export default function Home() {
   return (
     <main className="relative flex-grow max-w-screen-xl mx-auto w-full px-6">
+      <Starfield
+        starCount={1000}
+        starColor={[255, 255, 255]}
+        speedFactor={0.05}
+        backgroundColor="black"
+      />
       <FadeIn>
         <section className="md:min-h-screen gap-20 md:gap-15 flex flex-wrap justify-center items-center pt-20 lg:pt-0 bg-gradient-radial from-red-600/50 via-black to-transparent">
           <div className="absolute z-0 gap-4 grid grid-cols-2 md:grid-cols-3 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -39,10 +46,10 @@ export default function Home() {
               className="grayscale opacity-15"
             />
             <Image
-            src="/icons/go.svg"
-            width={100} height={100} alt="go logo"
-            className="grayscale opacity-15"
-          />
+              src="/icons/go.svg"
+              width={100} height={100} alt="go logo"
+              className="grayscale opacity-15"
+            />
           </div>
           <div className="z-10 w-[30rem] flex flex-col gap-8 justify-center">
             <h1 className="text-3xl lg:text-5xl font-bold">Hola soy, <HomeTyping /></h1>
