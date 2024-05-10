@@ -10,15 +10,17 @@ import Starfield from "react-starfield";
 
 export default function Home() {
   return (
-    <main className="relative flex-grow max-w-screen-xl mx-auto w-full px-6">
+    <main className="relative flex-grow max-w-screen-lg mx-auto w-full px-6">
       <Starfield
         starCount={1000}
         starColor={[255, 255, 255]}
         speedFactor={0.05}
         backgroundColor="black"
       />
+      {/* Section 1 */}
+
       <FadeIn>
-        <section className="md:min-h-screen gap-20 md:gap-15 flex flex-wrap justify-center items-center pt-20 lg:pt-0 bg-gradient-radial from-red-600/50 via-black to-transparent">
+        <section className="relative md:min-h-screen gap-20 md:gap-15 flex flex-wrap justify-center items-center py-20 lg:py-0 bg-gradient-radial from-red-600/50 via-black to-transparent">
           <div className="absolute z-0 gap-4 grid grid-cols-2 md:grid-cols-3 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
             <Image
               src="/icons/react.svg"
@@ -80,6 +82,31 @@ export default function Home() {
                 alt="paolochmprojects profile avatar"
               />
             </AvatarAnimation>
+          </div>
+        </section>
+      </FadeIn>
+
+      {/* Section 2 */}
+      <FadeIn>
+        <section id="about-me">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div className="flex flex-col gap-4">
+              <h2 className="text-3xl font-bold font-bebas">Sobre mi</h2>
+              <p className="text-balance">
+                Enfocado a crear software de calidad y mantenible, con el principal objetivo de solucionar problemas. Con más de
+                1 año en desarrollo de aplicaciones web y 2 años de experiencia en el desarrollo de software y despliegues en plataformas
+                y servidores. Con mucho amor y dedicación.
+              </p>
+            </div>
+            <ul className="grid grid-cols-4 gap-10 justify-center flex-wrap w-full">
+              <li className="flex transform rotate-12 items-center justify-center animate-bounce"><Image src="/icons/css.svg" width={75} height={75} alt="react logo" /></li>
+              <li className="flex transform rotate-12 items-center justify-center animate-bounce"><Image src="/icons/javascript.svg" width={75} height={75} alt="react logo" /></li>
+              <li className="flex transform rotate-12 items-center justify-center animate-bounce"><Image src="/icons/html.svg" width={75} height={75} alt="react logo" /></li>
+              <li className="flex transform rotate-12 items-center justify-center animate-bounce"><Image src="/icons/python.svg" width={100} height={100} alt="react logo" /></li>
+              <li className="flex transform rotate-12 items-center justify-center animate-bounce"><Image src="/icons/docker.svg" width={75} height={75} alt="react logo" /></li>
+              <li className="flex transform rotate-12 items-center justify-center col-span-2 animate-bounce"><Image src="/icons/odoo.svg" width={200} height={100} alt="odoo logo" /></li>
+              <li className="flex transform rotate-12 items-center justify-center animate-bounce"><Image src="/icons/git.svg" width={75} height={75} alt=" logo" /></li>
+            </ul>
           </div>
         </section>
       </FadeIn>
