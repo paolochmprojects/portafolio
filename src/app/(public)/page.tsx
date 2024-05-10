@@ -58,13 +58,13 @@ export default function Home() {
             </p>
             <div className="flex gap-4">
               <Link href="http://www.linkedin.com/in/paolocesarcharcamamani"
-                className="flex gap-2 w-36 h-14 justify-around items-center text-lg bg-red-600 p-3 rounded-xl text-center font-semibold hover:scale-105 transition-all duration-500 delay-100"
+                className="flex gap-2 w-36 h-14 justify-around items-center text-lg bg-red-600 p-3 rounded-xl text-center font-semibold hover:scale-105 hover:shadow-red-600/30 shadow-lg transition-all duration-500 delay-100"
               >
                 <FaLinkedin className="text-3xl" />
                 LinkedIn
               </Link>
               <Link href="https://github.com/paolochmprojects"
-                className="flex gap-2 w-36 h-14 justify-around items-center text-lg bg-black p-3 rounded-xl text-center font-semibold hover:scale-105 transition-all duration-500 delay-100"
+                className="flex gap-2 w-36 h-14 justify-around items-center text-lg bg-black p-3 rounded-xl text-center font-semibold hover:scale-105 hover:shadow-red-600/30 shadow-lg transition-all duration-500 delay-100"
               >
                 <FaGithub className="text-3xl" />
                 Github

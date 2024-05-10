@@ -7,7 +7,7 @@ const HomeTyping = () => {
             sequence={[
                 'Paolo Charca Mamani',
                 3000,
-                'Web Developer',
+                'Frontend Developer',
                 3000,
                 'Backend Developer',
                 3000,
