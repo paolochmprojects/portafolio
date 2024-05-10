@@ -3,9 +3,11 @@ import FadeIn from "@/components/animations/fadeIn";
 import JsIconsAnimate from "@/components/animations/js-icons";
 import PyIconsAnimate from "@/components/animations/python-icons";
 import HomeTyping from "@/components/home-typing";
+import OnBuild from "@/components/onbuild";
 import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { LuConstruction } from "react-icons/lu";
 import Starfield from "react-starfield";
 
 export default function Home() {
@@ -88,14 +90,17 @@ export default function Home() {
 
       {/* Section 2 */}
       <FadeIn>
-        <section id="about-me">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-            <div className="flex flex-col gap-4">
-              <h2 className="text-3xl font-bold font-bebas">Sobre mi</h2>
-              <p className="text-balance">
+        <section id="about-me" className="flex flex-col justify-center mt-10 min-h-screen">
+          <div className="sticky bg-black p-2">
+            <h2 className="text-4xl font-bold font-bebas mb-11">Sobre mi</h2>
+          </div>
+          <div className=" grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div className="bg-red-600/15 p-6 rounded-3xl">
+              <h4 className="text-2xl font-bebas">Mi Experiencia</h4>
+              <p className="mt-4">
                 Enfocado a crear software de calidad y mantenible, con el principal objetivo de solucionar problemas. Con más de
-                1 año en desarrollo de aplicaciones web y 2 años de experiencia en el desarrollo de software y despliegues en plataformas
-                y servidores. Con mucho amor y dedicación.
+                1 año en desarrollo de aplicaciones web y 2 años de experiencia en el desarrollo de software y despliegues de aplicaciones
+                en plataformas y servidores VPS. Con mucho amor y dedicación.
               </p>
             </div>
             <ul className="grid grid-cols-4 gap-10 justify-center flex-wrap w-full">
@@ -108,6 +113,24 @@ export default function Home() {
               <li className="flex transform rotate-12 items-center justify-center animate-bounce"><Image src="/icons/git.svg" width={75} height={75} alt=" logo" /></li>
             </ul>
           </div>
+        </section>
+      </FadeIn>
+
+      {/* Section 3 */}
+      <FadeIn>
+        <section id="my-projects" className="my-10 min-h-screen">
+          <div className="sticky top-20 bg-black p-2">
+            <h2 className="text-4xl font-bold font-bebas mb-11">Mis proyectos</h2>
+          </div>
+          <OnBuild />
+        </section>
+      </FadeIn>
+      <FadeIn>
+        <section id="my-services" className="my-10 min-h-screen">
+          <div className="sticky top-20 bg-black p-2">
+            <h2 className="text-4xl font-bold font-bebas mb-11">Mis servicios</h2>
+          </div>
+          <OnBuild />
         </section>
       </FadeIn>
     </main >

@@ -13,7 +13,7 @@ const links = [
     },
     {
         name: "Mis proyectos",
-        url: "#mi-projects",
+        url: "#my-projects",
     },
     {
         name: "Mis servicios",

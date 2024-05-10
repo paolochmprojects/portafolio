@@ -3,15 +3,13 @@ import { FaGithub, FaLinkedin } from "react-icons/fa"
 
 const Footer = () => {
     return (
-        <footer className="py-8 flex flex-col items-center gap-4 justify-center">
-            <div className="flex gap-4">
-                <Link href="https://github.com/paolochmprojects" 
-                className="text-lg">
-                    <FaGithub className="text-3xl" />
+        <footer className="py-10 flex flex-col items-center gap-10 justify-center">
+            <div className="flex gap-10">
+                <Link href="https://github.com/paolochmprojects" >
+                    <FaGithub className="text-4xl hover:rotate-6 hover:text-red-400 transition-all delay-100 duration-500" />
                 </Link>
-                <Link href="https://www.linkedin.com/in/paolocesarcharcamamani" 
-                className="text-lg">
-                    <FaLinkedin className="text-3xl" />
+                <Link href="https://www.linkedin.com/in/paolocesarcharcamamani" >
+                    <FaLinkedin className="text-4xl hover:rotate-6 hover:text-red-400 transition-all delay-100 duration-500" />
                 </Link>
             </div>
             <small className="text-gray-400">

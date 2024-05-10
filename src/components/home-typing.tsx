@@ -11,6 +11,8 @@ const HomeTyping = () => {
                 3000,
                 'Backend Developer',
                 3000,
+                'Odoo Developer',
+                3000,
             ]}
             className="text-red-600 font-mono"
             wrapper="span"
