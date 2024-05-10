@@ -4,10 +4,11 @@ import JsIconsAnimate from "@/components/animations/js-icons";
 import PyIconsAnimate from "@/components/animations/python-icons";
 import HomeTyping from "@/components/home-typing";
 import OnBuild from "@/components/onbuild";
+import ToTop from "@/components/ui/to-top";
 import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { LuConstruction } from "react-icons/lu";
+import { FaArrowUp } from "react-icons/fa";
 import Starfield from "react-starfield";
 
 export default function Home() {
@@ -133,6 +134,7 @@ export default function Home() {
           <OnBuild />
         </section>
       </FadeIn>
+      <ToTop/>
     </main >
   );
 }
