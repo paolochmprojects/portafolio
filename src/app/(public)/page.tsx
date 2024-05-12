@@ -23,7 +23,7 @@ export default function Home() {
       {/* Section 1 */}
 
       <FadeIn>
-        <section className="relative md:min-h-screen gap-20 md:gap-15 flex flex-wrap justify-center items-center py-20 lg:py-0 bg-gradient-radial from-red-600/50 via-black to-transparent">
+        <section id="#" className="relative md:min-h-screen gap-20 md:gap-15 flex flex-wrap justify-center items-center py-20 lg:py-0 bg-gradient-radial from-red-600/50 via-black to-transparent">
           <div className="absolute z-0 gap-4 grid grid-cols-2 md:grid-cols-3 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
             <Image
               src="/icons/react.svg"
@@ -91,12 +91,12 @@ export default function Home() {
 
       {/* Section 2 */}
       <FadeIn>
-        <section id="about-me" className="flex flex-col justify-center mt-10 min-h-screen">
-          <div className="sticky bg-black p-2">
-            <h2 className="text-4xl font-bold font-bebas mb-11">Sobre mi</h2>
+        <section id="about-me" className="flex flex-col gap-y-20 gap-x-10 mt-10 min-h-screen">
+          <div className="sticky top-20 z-20 bg-black p-2">
+            <h2 className="text-4xl font-bold font-bebas">Sobre mi</h2>
           </div>
           <div className=" grid grid-cols-1 md:grid-cols-2 gap-10">
-            <div className="bg-red-600/15 p-6 rounded-3xl">
+            <div className="bg-red-600/70 p-6">
               <h4 className="text-2xl font-bebas">Mi Experiencia</h4>
               <p className="mt-4">
                 Enfocado a crear software de calidad y mantenible, con el principal objetivo de solucionar problemas. Con más de
@@ -105,14 +105,35 @@ export default function Home() {
               </p>
             </div>
             <ul className="grid grid-cols-4 gap-10 justify-center flex-wrap w-full">
-              <li className="flex transform rotate-12 items-center justify-center animate-bounce"><Image src="/icons/css.svg" width={75} height={75} alt="react logo" /></li>
-              <li className="flex transform rotate-12 items-center justify-center animate-bounce"><Image src="/icons/javascript.svg" width={75} height={75} alt="react logo" /></li>
-              <li className="flex transform rotate-12 items-center justify-center animate-bounce"><Image src="/icons/html.svg" width={75} height={75} alt="react logo" /></li>
-              <li className="flex transform rotate-12 items-center justify-center animate-bounce"><Image src="/icons/python.svg" width={100} height={100} alt="react logo" /></li>
-              <li className="flex transform rotate-12 items-center justify-center animate-bounce"><Image src="/icons/docker.svg" width={75} height={75} alt="react logo" /></li>
-              <li className="flex transform rotate-12 items-center justify-center col-span-2 animate-bounce"><Image src="/icons/odoo.svg" width={200} height={100} alt="odoo logo" /></li>
-              <li className="flex transform rotate-12 items-center justify-center animate-bounce"><Image src="/icons/git.svg" width={75} height={75} alt=" logo" /></li>
+              {/* TODO: Animacion individual */}
+              <li className="flex transform -rotate-6 items-center justify-center"><Image src="/icons/css.svg" width={75} height={75} alt="react logo" /></li>
+              <li className="flex transform rotate-6 items-center justify-center"><Image src="/icons/javascript.svg" width={75} height={75} alt="react logo" /></li>
+              <li className="flex transform -rotate-6 items-center justify-center"><Image src="/icons/html.svg" width={75} height={75} alt="react logo" /></li>
+              <li className="flex transform rotate-6 items-center justify-center"><Image src="/icons/python.svg" width={100} height={100} alt="react logo" /></li>
+              <li className="flex transform -rotate-6 items-center justify-center"><Image src="/icons/docker.svg" width={75} height={75} alt="react logo" /></li>
+              <li className="flex transform rotate-6 items-center justify-center col-span-2"><Image src="/icons/odoo.svg" width={200} height={100} alt="odoo logo" /></li>
+              <li className="flex transform -rotate-6 items-center justify-center"><Image src="/icons/git.svg" width={75} height={75} alt=" logo" /></li>
             </ul>
+          </div>
+          <div className=" grid grid-cols-1 md:grid-cols-2 gap-10">
+            <ul className="grid grid-cols-4 gap-10 justify-center items-center flex-wrap w-full">
+              <li><Image className="-rotate-6" src="/icons/typescript.svg" width={75} height={75} alt="typescript logo" /></li>
+              <li><Image className="rotate-6" src="/icons/react.svg" width={75} height={75} alt="react logo" /></li>
+              <li><Image className="-rotate-6 invert" src="/icons/nextlogo.svg" width={75} height={75} alt="next logo" /></li>
+              <li><Image className="rotate-6" src="/icons/nest.svg" width={75} height={75} alt="next logo" /></li>
+              <li><Image className="-rotate-6" src="/icons/tailwind.svg" width={75} height={75} alt="docker logo" /></li>
+              <li><Image className="rotate-6 invert" src="/icons/prisma.svg" width={75} height={75} alt="next logo" /></li>
+              <li><Image className="-rotate-6" src="/icons/node.svg" width={75} height={75} alt="node logo" /></li>
+              <li><Image className="rotate-6" src="/icons/docker.svg" width={75} height={75} alt="docker logo" /></li>
+            </ul>
+            <div className="bg-black/85 z-10 p-6">
+              <h4 className="text-2xl font-bebas">Mi Stack de desarrollo</h4>
+              <p>
+                Para el backend con Nest y Typescript, ya que me proveen una forma de construir un backend de forma rapida y sacalable.
+                Para el frontend con React con Next y Tailwind, ya que me permite crear interfaces increibles para mis usuarios 
+                de forma rapida y divertida.
+              </p>
+            </div>
           </div>
         </section>
       </FadeIn>
@@ -120,21 +141,21 @@ export default function Home() {
       {/* Section 3 */}
       <FadeIn>
         <section id="my-projects" className="my-10 min-h-screen">
-          <div className="sticky top-20 bg-black p-2">
-            <h2 className="text-4xl font-bold font-bebas mb-11">Mis proyectos</h2>
+          <div className="sticky top-20 bg-black p-2 z-20">
+            <h2 className="text-4xl font-bold font-bebas">Mis proyectos</h2>
           </div>
           <OnBuild />
         </section>
       </FadeIn>
       <FadeIn>
         <section id="my-services" className="my-10 min-h-screen">
-          <div className="sticky top-20 bg-black p-2">
-            <h2 className="text-4xl font-bold font-bebas mb-11">Mis servicios</h2>
+          <div className="sticky top-20 bg-black p-2 z-20">
+            <h2 className="text-4xl font-bold font-bebas">Mis servicios</h2>
           </div>
           <OnBuild />
         </section>
       </FadeIn>
-      <ToTop/>
+      <ToTop />
     </main >
   );
 }

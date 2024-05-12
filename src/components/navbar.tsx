@@ -28,7 +28,7 @@ const Navbar = () => {
     return (
         <nav className="z-30 fixed bg-black w-full top-0 p-6 justify-between">
             <div className="flex justify-between w-full max-w-screen-lg mx-auto">
-                <Link href="/" className="font-bebas text-3xl">
+                <Link href="#" className="font-bebas text-3xl">
                     PaoloChM
                 </Link>
                 <ul className="hidden md:flex md:gap-6">
