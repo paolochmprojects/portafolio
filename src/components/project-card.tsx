@@ -25,9 +25,9 @@ const ProjectCard = async ({ title, languageUrl, url, description }: Props) => {
     const response = await fetch(languageUrl)
     const data = await response.json() as Record<string, number>
     const languages = Object.keys(data)
-    
+
     return (
-        <div className="flex flex-col w-72 p-4 bg-gray-500/50 rounded-xl">
+        <div className="flex flex-col w-full md:w-72 p-4 bg-gray-500/50 rounded-xl">
 
             <div className="flex justify-between">
                 <h1 className="font-bebas text-xl">{title}</h1>
