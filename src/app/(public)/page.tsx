@@ -1,17 +1,22 @@
 import AvatarAnimation from "@/components/animations/avatar";
 import FadeIn from "@/components/animations/fadeIn";
-import JsIconsAnimate from "@/components/animations/js-icons";
-import PyIconsAnimate from "@/components/animations/python-icons";
 import HomeTyping from "@/components/home-typing";
 import OnBuild from "@/components/onbuild";
+import ProjectCard from "@/components/project-card";
 import ToTop from "@/components/ui/to-top";
 import Image from "next/image";
 import Link from "next/link";
+import { title } from "process";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { FaArrowUp } from "react-icons/fa";
 import Starfield from "react-starfield";
+import { GithubRepos } from "./interface/github.interface";
 
-export default function Home() {
+export default async function Home() {
+
+  const projectsGithub = await fetch("https://api.github.com/users/paolochmprojects/repos")
+
+  const projectsData = await projectsGithub.json() as GithubRepos[]
+
   return (
     <main className="relative flex-grow max-w-screen-lg mx-auto w-full px-6">
       <Starfield
@@ -130,7 +135,7 @@ export default function Home() {
               <h4 className="text-2xl font-bebas">Mi Stack de desarrollo</h4>
               <p>
                 Para el backend con Nest y Typescript, ya que me proveen una forma de construir un backend de forma rapida y sacalable.
-                Para el frontend con React con Next y Tailwind, ya que me permite crear interfaces increibles para mis usuarios 
+                Para el frontend con React con Next y Tailwind, ya que me permite crear interfaces increibles para mis usuarios
                 de forma rapida y divertida.
               </p>
             </div>
@@ -144,7 +149,17 @@ export default function Home() {
           <div className="sticky top-20 bg-black p-2 z-20">
             <h2 className="text-4xl font-bold font-bebas">Mis proyectos</h2>
           </div>
-          <OnBuild />
+          <div className="p-2 flex gap-10 flex-wrap">
+            {
+              projectsData.map((project) => <ProjectCard
+                key={project.id}
+                title={project.name}
+                languageUrl={project.languages_url}
+                description={project.description}
+                url={project.html_url}
+              />)
+            }
+          </div>
         </section>
       </FadeIn>
       <FadeIn>
